@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Red%20Hat%20Display:wght@500;700;900&display=swap');
+
+:root{
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desatured-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    font-size: 16px;
+    font-family: 'Red Hat Display', serif;
+    font-weight: 500;
+}
+body{
+    background-color: var(--pale-blue);
+    position: relative;
+    max-width: 28em;
+    height: 40vh;
+    margin: auto;
+}
+
+.container{
+    position: absolute;
+    
+    max-width: 28em;
+    width: 100%;
+    right: 0;
+    
+}
+
+section{
+    background-color: var(--very-pale-blue);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+p{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.flexbox{
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+}
+
+.flexbox img{
+    position: relative;
+    width: inherit;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.plans{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1em;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-weight: 900;
+}
+h2{
+    display: inline-block;
+    font-weight: 700;
+}
+p{
+    font-weight: 500;
+    text-align: center;
+}
+.attribution { 
+    text-align: center;
+    width: 300px; 
+    position: absolute;
+    
+    
+    font-size: 11px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+a:hover{
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+button{
+    position: relative;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.pay{
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+}
+
+.pay:hover{
+    background-color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.cancel{
+    font-weight: 700;
+    border: 0 px;
+    text-decoration: none;
+}
+
+.cancel:hover{
+    color: black;
+    cursor: pointer;
+}
