@@ -24,6 +24,8 @@ body{
     flex: 1;
     align-self: center;
     max-width: 350px;
+    height: 70vh;
+    padding: 10vh;
 }
 
 section{
@@ -63,14 +65,14 @@ p{
 .plans{
     display: flex;
     flex-direction: row;
-    column-gap: 3em;
+    column-gap: 1.5vw;
     background-color: #eef2ff;
     border-radius: 0.5em;
     align-items: center;
     justify-content: center;
     max-width: 300px;
+    width: 90%;
     margin-bottom: 5px;
-    
 }
 
 .attribution { 
@@ -99,6 +101,7 @@ button{
     background-color: var(--bright-blue);
     color: var(--very-pale-blue);
     max-width: 300px;
+    width: 80%;
     transition: all 0.3s ease 0s;
     border-radius: 0.5rem;
     padding-bottom: 10px;
@@ -127,6 +130,10 @@ button{
 .cancel:hover{
     color: black;
     cursor: pointer;
+}
+
+.change{
+    color: var(--bright-blue);
 }
 
 h1{
