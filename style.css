@@ -15,8 +15,8 @@
 body{
     background-color: var(--pale-blue);
     display: flex;
-
     flex-direction: column;
+    height: 100vh;
     justify-content: space-between;
 }
 
@@ -30,13 +30,12 @@ section{
     background-color: var(--very-pale-blue);
     display: flex;
     flex-direction: column;
-    max-height: 80vh;
-    height: 100%;
+    height: inherit;
     flex-grow: 1;
     
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 p{
     padding-left: 3%;
@@ -56,7 +55,7 @@ p{
 }
 
 .flexbox img{
-    max-height: 20vh; 
+    max-height: 30vh; 
     width: inherit;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
@@ -64,17 +63,21 @@ p{
 .plans{
     display: flex;
     flex-direction: row;
-    column-gap: 1em;
+    column-gap: 3em;
+    background-color: #eef2ff;
+    border-radius: 0.5em;
     align-items: center;
-    justify-content: space-evenly;
-    padding-left: 12%;
-    padding-right: 12%;
+    justify-content: center;
+    max-width: 300px;
+    margin-bottom: 5px;
+    
 }
 
 .attribution { 
     text-align: center;
-    flex: 1;
-    max-height: inherit;
+    flex: none;
+    
+    height: 5vh;
 }
 .attribution a { 
     color: hsl(228, 45%, 44%); 
@@ -95,11 +98,13 @@ button{
     background-color: var(--bright-blue);
     color: var(--very-pale-blue);
     max-width: 300px;
+    transition: all 0.3s ease 0s;
     border-radius: 0.5rem;
+    padding-bottom: 10px;
 }
 
 .pay:hover{
-    background-color: var(--dark-blue);
+    background-color: var(--desatured-blue);
     cursor: pointer;
 }
 
@@ -109,14 +114,19 @@ button{
     border: 0 px;
     text-decoration: none;
     margin: 20px;
-    padding-bottom: 15px;
-    padding-top: 10px;
+    color: var(--desatured-blue);
+}
+
+.cancel-container{
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .cancel:hover{
     color: black;
     cursor: pointer;
 }
+
 h1{
     font-weight: 900;
 }
@@ -126,4 +136,5 @@ h2{
 p{
     font-weight: 500;
     text-align: center;
+    line-height: 20px;
 }
